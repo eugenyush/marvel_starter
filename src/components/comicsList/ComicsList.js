@@ -1,7 +1,8 @@
 import {useState, useEffect} from 'react';
+
 import useMarvelService from '../../services/MarvelService';
-import Spinner from '../spinner/Spinner';
-import ErrorMessage from '../errorMessage/ErrorMessage';
+import Spinner from '../spiner/Spiner';
+import ErrorMessage from '../errorMassage/ErrorMassage.js';
 
 import './comicsList.scss';
 
