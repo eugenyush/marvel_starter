@@ -71,3 +71,7 @@ To run the project in your local environment, follow these steps:
    The app will run on [http://localhost:3000](http://localhost:3000) (or the address shown in your console).
 
 ## 📹 Video
+
+https://github.com/user-attachments/assets/c0fdfc8b-11e4-4b41-9e03-c5a26c034981
+
+
