@@ -1,131 +1,73 @@
 
-# Marvel Starter Project
 
-## 📖 Overview
+# Marvel Starter - A Marvel Character and Comics Explorer
 
-The **Marvel Starter** project is a React-based web application that allows users to explore Marvel characters, comics, and related data. The app utilizes the Marvel API to fetch detailed information about each character and comic, and provides a user-friendly interface for navigation.
+Marvel Starter is a simple web application that allows you to explore and learn more about Marvel characters and comics. The application fetches data directly from the Marvel API and presents it in a clean, user-friendly format.
 
-## ✨ Features
+It is built using:
 
-- **Marvel Character Search**: Search for detailed information about any Marvel character.
-- **Comics Library**: Browse through a collection of comics with detailed descriptions, pages, language, and prices.
-- **Responsive Design**: Optimized for desktop and mobile devices.
-- **Error Handling**: Robust error messages and loading states for improved user experience.
+- **React**
+- **Marvel API**
+- **SCSS** 
+- **React Router**
+
+## 👾 Features
+
+- Search for any Marvel character and view detailed information.
+- Explore Marvel comics with descriptions, pages, language, and pricing details.
+- Fully responsive design optimized for desktop and mobile.
+- Error handling for API issues and loading states with spinners.
+- Data fetched in real-time from the Marvel API.
+
 
 ## 🚀 Demo
 
 [Marvel Starter Demo](https://eugenyush.github.io/marvel_starter/)
 
-## 📦 Installation
 
-### Prerequisites
+## 📒 Process
 
-- **Node.js**: Ensure you have Node.js installed on your machine. You can download it [here](https://nodejs.org/).
-- **Marvel API Key**: To fetch data from the Marvel API, you will need an API key. You can obtain one by signing up [here](https://developer.marvel.com/).
+I started by implementing the basic structure of the application with React and connected it to the Marvel API. The next step was to create the components for displaying character and comic data, followed by adding routes using React Router.
 
-### Step-by-Step Guide
+Once the basic functionality was working, I focused on styling the application using SCSS to ensure a clean and responsive design.
 
-1. **Clone the repository**:
+Subsequent improvements included error handling (with spinners and error messages) and performance optimizations such as reducing unnecessary re-renders and improving data-fetching strategies.
 
-   \`\`\`bash
+Everything is displayed using the data provided by the Marvel API, so users can access the latest information in real-time.
+
+**NOTE:** The purpose of this project is to demonstrate usage of the Marvel API with React. It is not meant to be a complete Marvel fan application.
+
+## 🚦 Running the Project
+
+To run the project in your local environment, follow these steps:
+
+1. **Clone the repository to your local machine**:
+   
+   ```bash
    git clone https://github.com/eugenyush/marvel_starter.git
    cd marvel_starter
-   \`\`\`
+   ```
 
 2. **Install dependencies**:
 
-   Run the following command to install all required dependencies:
-
-   \`\`\`bash
+   ```bash
    npm install
-   \`\`\`
+   ```
 
 3. **Set up environment variables**:
 
-   Create a `.env` file in the root of the project and add your Marvel API key:
+   Create a `.env` file in the root directory and add your Marvel API key:
 
-   \`\`\`bash
+   ```bash
    REACT_APP_MARVEL_API_KEY=your_marvel_api_key_here
-   \`\`\`
+   ```
 
-4. **Start the development server**:
+4. **Start the project**:
 
-   \`\`\`bash
+   ```bash
    npm start
-   \`\`\`
+   ```
 
-   This will launch the application in development mode. Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+   The app will run on [http://localhost:3000](http://localhost:3000) (or the address shown in your console).
 
-## 📂 Project Structure
-
-\`\`\`bash
-marvel_starter/
-├── public/                # Public assets
-├── src/
-│   ├── components/        # Reusable components
-│   ├── pages/             # Pages like Character, Comic, etc.
-│   ├── services/          # API service to fetch data from Marvel API
-│   ├── styles/            # Global styles and SCSS files
-│   └── App.js             # Main App component
-├── .env                   # Environment variables (Marvel API key)
-├── package.json           # Project dependencies and scripts
-└── README.md              # Project documentation
-\`\`\`
-
-## 🔧 Technologies Used
-
-- **React**: JavaScript library for building user interfaces.
-- **React Router**: Library for routing in React applications.
-- **Marvel API**: External API to fetch data about characters and comics.
-- **SCSS**: Preprocessor for styling.
-
-## ⚙️ API Integration
-
-The application interacts with the Marvel API to fetch data about characters and comics. The following services are used:
-
-- **\`getCharacterById\`**: Fetches a character by its unique ID.
-- **\`getComics\`**: Retrieves comics data.
-- **\`clearError\`**: Resets any previous API errors before making a new request.
-
-### Example API Call
-
-To fetch a character by ID:
-
-\`\`\`js
-import useMarvelService from '../../services/MarvelService';
-
-const { getCharacterById } = useMarvelService();
-
-getCharacterById(characterId).then(character => {
-  console.log(character);
-});
-\`\`\`
-
-## 🛠️ Available Scripts
-
-In the project directory, you can run:
-
-- **\`npm start\`**: Runs the app in the development mode.
-- **\`npm test\`**: Launches the test runner.
-- **\`npm run build\`**: Builds the app for production to the \`build\` folder.
-
-## 🐞 Error Handling
-
-The app provides meaningful error messages if API requests fail. Both loading states and error components ensure a smooth user experience even if data cannot be fetched.
-
-- **\`ErrorMessage\` Component**: Displays when something goes wrong while fetching data.
-- **\`Spinner\` Component**: Displays a loading spinner when data is being fetched.
-
-## 🚧 Future Enhancements
-
-Some ideas for future development:
-
-- **Pagination**: Add pagination to the character and comic lists.
-- **Favorite Characters**: Allow users to favorite and save their preferred characters.
-- **More Marvel Data**: Expand the app to include more categories like series, events, and stories.
-
-## 📞 Contact
-
-For any questions or feedback, feel free to contact the project maintainer:
-
-- **GitHub**: [eugenyush](https://github.com/eugenyush)
+## 📹 Video
