@@ -6,6 +6,7 @@ import CharInfo from "../charInfo/CharInfo";
 import ErrorBoundary from "../errorboundary/ErrorBoundary";
 
 import decoration from '../../resources/img/vision.png';
+import CharFinder from "../charFinder/CharFinder";
 
 const MainPage = () => {
 
@@ -24,9 +25,15 @@ const MainPage = () => {
                 <ErrorBoundary>
                     <CharList onCharSelected={onCharSelected}/>
                 </ErrorBoundary>
-                <ErrorBoundary>
+                <div>
+                    <ErrorBoundary>
                     <CharInfo charId={selectedChar}/>
                 </ErrorBoundary>
+                <ErrorBoundary>
+                    <CharFinder/>
+                </ErrorBoundary>
+                </div>
+                
             </div>
             <img className="bg-decoration" src={decoration} alt="vision"/>
         </>

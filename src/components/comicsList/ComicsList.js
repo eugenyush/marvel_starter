@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 
 import useMarvelService from '../../services/MarvelService';
 import Spinner from '../spiner/Spiner';
-import ErrorMessage from '../errorMassage/ErrorMassage.js';
+import ErrorMessage from '../errorMessage/ErrorMessage.js';
 
 import './comicsList.scss';
 
