@@ -5,7 +5,6 @@
 Marvel Starter is a simple web application that allows you to explore and learn more about Marvel characters and comics. The application fetches data directly from the Marvel API and presents it in a clean, user-friendly format.
 
 It is built using:
-
 - **React**
 - **Marvel API**
 - **SCSS** 
